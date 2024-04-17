@@ -27,7 +27,7 @@
     <h1 id="contact-form">Contact Form</h1>
     <hr>
 
-    <form class="input-form">
+    <form class="input-form" action="submit_form.php" method="post">
       <label for="first-name" id="first-name-label">First Name:</label>
       <input type="text" id="first-name-input" name="first-name" required>
 

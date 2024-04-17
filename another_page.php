@@ -18,7 +18,7 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
-      <a href="contact.htphpml">Contact</a>
+      <a href="contact.php">Contact</a>
     </nav>
   </header>
   <main id="contact_us" style="text-align: center;">
