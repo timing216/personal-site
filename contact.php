@@ -34,7 +34,7 @@
       <label for="last-name" id="last-name-label">Last Name:</label>
       <input type="text" id="last-name-input" name="last-name" required>
 
-      <label for="email" input="email-label">Email:</label>
+      <label for="email" id="email-label">Email:</label>
       <input type="email" id="email-input" name="email" required>
 
       <label for="phone" id="phone-label">Phone:</label>
