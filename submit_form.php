@@ -29,6 +29,8 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+// Close statement
+$stmt->close();
 // Close connection
 $conn->close();
 ?>
