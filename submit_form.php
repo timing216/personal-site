@@ -1,8 +1,10 @@
 <?php
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 // Database connection parameters
 $servername = "localhost"; // Change this to your database server name
 $username = "utaro"; // Change this to your database username
-$password = "paSSw0rd"; // Change this to your database password
+$password = "newPassword123"; // Change this to your database password
 $dbname = "ContactForm"; // Change this to your database name
 
 // Create connection
@@ -24,13 +26,15 @@ $message = $_POST['message'];
 $sql = "INSERT INTO contact_entries (first_name, last_name, email, phone, message) VALUES ('$first_name', '$last_name', '$email', '$phone', '$message')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    // echo "New record created successfully";
+    header("Location: another_page.php");
+    exit(); // prevent further script execution
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 // Close statement
-$stmt->close();
+// $stmt->close();
 // Close connection
 $conn->close();
 ?>
