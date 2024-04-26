@@ -1,6 +1,6 @@
 <?php
-// ini_set('display_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 // Database connection parameters
 $servername = "localhost"; // Change this to your database server name
 $username = "utaro"; // Change this to your database username
@@ -22,7 +22,7 @@ $password2 = $_POST['password2'];
 $message = $_POST['message'];
 
 // SQL query to insert data into database
-$sql = "INSERT INTO contact_entries (first_name, last_name, email, phone, message) VALUES ('$userid', '$email', '$password2', '$message')";
+$sql = "INSERT INTO registrationForm (userid, email, password2, message) VALUES ('$userid', '$email', '$password2', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     // echo "New record created successfully";
