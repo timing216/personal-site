@@ -12,12 +12,12 @@
   </header> -->
 
   <header>
-    <span class="name">Utaro Hayashi</span>
+    <span class="name" >Utaro Hayashi</span>
     <nav class="links">
       <a href="index.php">Home</a>
       <a class="active" href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
-      <a href="contact.php">Contact</a>
+      <a href="register.php">Register</a>
     </nav>
   </header>
 

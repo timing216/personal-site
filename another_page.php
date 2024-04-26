@@ -18,13 +18,13 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
-      <a href="contact.php">Contact</a>
+      <a href="register.php">Register</a>
     </nav>
   </header>
   <main id="contact_us" style="text-align: center;">
 
-    <h1 id="thanks-for-contact">Thanks for contacting us!</h1>
-    <h2 id="will-get-back">We will get back to you shortly.</h2>
+    <h1 id="thanks-for-contact">Thanks for registering!</h1>
+    <h2 id="will-get-back">You will be receiving our newsletter soon!</h2>
   </main>
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">

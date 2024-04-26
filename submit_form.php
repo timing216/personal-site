@@ -5,7 +5,7 @@
 $servername = "localhost"; // Change this to your database server name
 $username = "utaro"; // Change this to your database username
 $password = "newPassword123"; // Change this to your database password
-$dbname = "ContactForm"; // Change this to your database name
+$dbname = "registerForm"; // Change this to your database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,14 +16,13 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
-$first_name = $_POST['first-name'];
-$last_name = $_POST['last-name'];
+$userid = $_POST['userid'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
+$password2 = $_POST['password2'];
 $message = $_POST['message'];
 
 // SQL query to insert data into database
-$sql = "INSERT INTO contact_entries (first_name, last_name, email, phone, message) VALUES ('$first_name', '$last_name', '$email', '$phone', '$message')";
+$sql = "INSERT INTO contact_entries (first_name, last_name, email, phone, message) VALUES ('$userid', '$email', '$password2', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     // echo "New record created successfully";

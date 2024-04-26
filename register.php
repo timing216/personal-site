@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <title>Utaro Hayashi - Developer, Risk Consultant, Mentor</title>
-  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="register.css" />
   <script src="javascript.js"></script>
+
   <meta name="description"
     content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
   <meta name="keywords" content="developer, risk consultant, cyber security, mentor" />
@@ -18,32 +20,55 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
-      <a class="active" href="contact.php">Contact</a>
+      <a class="active" href="register.php">Register</a>
     </nav>
   </header>
 
   <main>
     <hr>
-    <h1 id="contact-form">Contact Form</h1>
+    <h1 id="register-form">Newsletter Registration</h1>
     <hr>
 
-    <form class="input-form" action="submit_form.php" method="post">
-      <label for="first-name" id="first-name-label">First Name:</label>
-      <input type="text" id="first-name-input" name="first-name" required>
+<form class="input-form" action="submit_form.php"     method="post">
 
-      <label for="last-name" id="last-name-label">Last Name:</label>
-      <input type="text" id="last-name-input" name="last-name" required>
+  <label for="userid">User Id:</label>
+  <input type="text" id="userid" name="userid" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password1">Password:</label>
+  <input type="password" id="password1" name="password1" required>
+
+  <label for="password2">Re-enter Password:</label>
+  <input type="password" id="password2" name="password2" required>
+
+  <label for="message">Message:</label>
+  <textarea name="message" id="message" ></textarea>
+
+  <label for="error-message"></label>
+  <span id="passwordError" class="error-message" ></span>
+
+  <input type="submit" value="Submit" id="submit">
+</form>
+    <!-- <form class="input-form" action="submit_form.php" method="post">
+
+      <label for="userid" id="userid-label">User Id:</label>
+      <input type="userid" id="userid-input" name="userid" required>
 
       <label for="email" id="email-label">Email:</label>
       <input type="email" id="email-input" name="email" required>
 
-      <label for="phone" id="phone-label">Phone:</label>
-      <input type="phone" id="phone-input" name="phone">
+      <label for="password1" id="password1-label">Password:</label>
+      <input type="password" id="password1-input" name="password1" required>
+
+      <label for="password2" id="password2-label">Re-Enter Password:</label>
+      <input type="password" id="password2-input" name="password2" required>
 
       <label for="message" id="message-label">Message:</label>
       <textarea name="message" id="message-input" cols="48" rows="30" required></textarea>
       <input type = "submit" onclick=openAnotherPage() value="Submit" id="submit">
-    </form>
+    </form> -->
   </main>
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">

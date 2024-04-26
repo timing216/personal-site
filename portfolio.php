@@ -14,7 +14,7 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a class="active" href="portfolio.php">Portfolio</a>
-      <a href="contact.php">Contact</a>
+      <a href="register.php">Register</a>
     </nav>
   </header>
 
