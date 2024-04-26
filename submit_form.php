@@ -5,7 +5,7 @@
 $servername = "localhost"; // Change this to your database server name
 $username = "utaro"; // Change this to your database username
 $password = "newPassword123"; // Change this to your database password
-$dbname = "registerForm"; // Change this to your database name
+$dbname = "registrationForm"; // Change this to your database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
