@@ -16,13 +16,13 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
-$userid = $_POST['userid'];
+$userName = $_POST['userName'];
 $email = $_POST['email'];
 $password2 = $_POST['password2'];
 $message = $_POST['message'];
 
 // SQL query to insert data into database
-$sql = "INSERT INTO users(userid, email, password2, message) VALUES ('$userid', '$email', '$password2', '$message')";
+$sql = "INSERT INTO users(userName, email, password2, message) VALUES ('$userName', '$email', '$password2', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     // echo "New record created successfully";

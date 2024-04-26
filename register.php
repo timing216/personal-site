@@ -31,8 +31,8 @@
 
 <form class="input-form" action="submit_form.php"     method="post">
 
-  <label for="userid">User Id:</label>
-  <input type="text" id="userid" name="userid" required>
+  <label for="userName">User Name:</label>
+  <input type="text" id="userName" name="userName" required>
 
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" required>
