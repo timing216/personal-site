@@ -73,7 +73,7 @@ header::after {
   right: 24px;
 }
 
-#contact-form {
+#register-form {
   text-align: center;
   margin: 0;
   border: 0;
@@ -196,7 +196,7 @@ footer .media-link {
 
 /* added input validator */
 
-input:invalid,
+/* input:invalid,
 textarea:invalid {
   border: 2px solid red;
 }
@@ -204,4 +204,4 @@ textarea:invalid {
 input:valid,
 textarea:valid {
   border: 2px solid green;
-}
+} */

@@ -50,25 +50,7 @@
   <span id="passwordError" class="error-message" ></span>
 
   <input type="submit" value="Submit" id="submit">
-</form>
-    <!-- <form class="input-form" action="submit_form.php" method="post">
-
-      <label for="userid" id="userid-label">User Id:</label>
-      <input type="userid" id="userid-input" name="userid" required>
-
-      <label for="email" id="email-label">Email:</label>
-      <input type="email" id="email-input" name="email" required>
-
-      <label for="password1" id="password1-label">Password:</label>
-      <input type="password" id="password1-input" name="password1" required>
-
-      <label for="password2" id="password2-label">Re-Enter Password:</label>
-      <input type="password" id="password2-input" name="password2" required>
-
-      <label for="message" id="message-label">Message:</label>
-      <textarea name="message" id="message-input" cols="48" rows="30" required></textarea>
-      <input type = "submit" onclick=openAnotherPage() value="Submit" id="submit">
-    </form> -->
+  </form>
   </main>
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">
