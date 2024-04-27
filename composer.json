@@ -1,0 +1,8 @@
+{
+    "name": "yourusername/personal-site",
+    "description": "A personal site project using JWT for authentication",
+    "license": "proprietary",
+    "require": {
+        "firebase/php-jwt": "^5.4"
+    }
+}
