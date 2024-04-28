@@ -77,7 +77,7 @@ header::after {
   border-bottom: 1px solid #0000008e;
 }
 
-#register-page {
+#login-form {
   text-align: center;
   margin: 0;
   border: 0;
@@ -85,11 +85,8 @@ header::after {
 }
 
 #userName:hover,
-#email:hover,
-#password1:hover,
-#password2:hover,
-#message:hover,
-#submit:hover {
+#password:hover,
+#login:hover {
   /* width: 10em;
   height: 5ex; */
   background-color: rgba(255, 255, 255, 0.927);
@@ -102,42 +99,30 @@ header::after {
 
 .error-message {
   color: rgb(0, 179, 255);
-  margin-top: 2px;
-  text-align: center;
+  margin-top: 5px;
 }
 
-.register-form {
+.login-form {
   padding: 2em 4em 2em 4em;
   display: grid;
-  row-gap: 0.5rem;
+  row-gap: 1.5rem;
   column-gap: 0.5rem;
   /* grid-template-columns: 1fr 1.67fr 1fr 1.67fr; */
   grid-template-columns: 15% 25% 15% 25%;
-  grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem;
+  grid-template-rows: 1.5rem 1.5rem;
   border-radius: 20%;
-  grid-column: span 1;
   justify-self: right;
   text-align: right;
 }
 
-#email-input,
-#username-input,
-#password1-input,
-#password2-input,
-#submit {
+#login-input,
+#password-input,
+#login {
   border-radius: 5px;
 }
 
-#message {
-  grid-column: 2;
-  grid-column-end: 5;
-  grid-row: 3;
-  grid-row-end: 5;
-  border-radius: 5px;
-}
-
-#submit {
-  grid-row-start: 5;
+#login {
+  grid-row-start: 2;
   grid-column-start: 4;
   width: fit-content;
   justify-self: right;
@@ -201,15 +186,3 @@ footer .media-link {
   margin-right: 8px;
   float: right;
 }
-
-/* added input validator */
-
-/* input:invalid,
-textarea:invalid {
-  border: 2px solid red;
-}
-
-input:valid,
-textarea:valid {
-  border: 2px solid green;
-} */

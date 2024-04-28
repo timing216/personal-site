@@ -5,8 +5,7 @@
   <title>Utaro Hayashi - Developer, Risk Consultant, Mentor</title>
   <link rel="stylesheet" href="style.css" />
   <script src="javascript.js"></script>
-  <meta name="description"
-    content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
+  <meta name="description" content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
   <meta name="keywords" content="developer, risk consultant, cyber security, mentor" />
 </head>
 
@@ -19,6 +18,7 @@
       <a href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
       <a href="register.php">Register</a>
+      <a href="login.php">Login</a>
     </nav>
   </header>
 

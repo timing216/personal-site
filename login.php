@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <title>Utaro Hayashi - Developer, Risk Consultant, Mentor</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
   <script src="javascript.js"></script>
+
   <meta name="description" content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
   <meta name="keywords" content="developer, risk consultant, cyber security, mentor" />
 </head>
@@ -21,10 +23,25 @@
       <a href="login.php">Login</a>
     </nav>
   </header>
-  <main id="contact_us" style="text-align: center;">
 
-    <h1 id="thanks-for-contact">Thanks for registering!</h1>
-    <h2 id="will-get-back">You will be receiving our newsletter soon!</h2>
+  <main>
+    <hr>
+    <h1 id="login-form">Newsletter Login</h1>
+    <hr>
+
+    <form class="login-form" action="login_form.php" method="post">
+
+      <label for="userName">Username:</label>
+      <input type="text" id="userName" name="userName" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="button" value="Login" id="login">
+
+      <label for="error-message"></label>
+      <span id="passwordError" class="error-message"></span>
+    </form>
   </main>
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">

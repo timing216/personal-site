@@ -12,12 +12,13 @@
   </header> -->
 
   <header>
-    <span class="name" >Utaro Hayashi</span>
+    <span class="name">Utaro Hayashi</span>
     <nav class="links">
       <a href="index.php">Home</a>
       <a class="active" href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
       <a href="register.php">Register</a>
+      <a href="login.php">Login</a>
     </nav>
   </header>
 
@@ -28,7 +29,7 @@
       free time."
     </h1>
     <section>
-    
+
       <h2>Meditation</h2>
       <img class="image" src="img/meditation.jpg" width="360" height="240" alt="meditation" />
       <p>

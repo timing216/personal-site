@@ -5,10 +5,7 @@
 <head>
   <title>Utaro Hayashi - Developer, Risk Consultant, Mentor</title>
   <link rel="stylesheet" href="register.css" />
-  <script src="javascript.js"></script>
-
-  <meta name="description"
-    content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
+  <meta name="description" content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
   <meta name="keywords" content="developer, risk consultant, cyber security, mentor" />
 </head>
 
@@ -20,37 +17,40 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
-      <a class="active" href="register.php">Register</a>
+      <a href="register.php">Register</a>
+      <a href="login.php">Login</a>
     </nav>
   </header>
 
   <main>
     <hr>
-    <h1 id="register-form">Newsletter Registration</h1>
+    <h1 id="register-page">Newsletter Registration</h1>
     <hr>
 
-<form class="input-form" action="submit_form.php"     method="post">
+    <form class="register-form" action="submit_form.php" method="post">
 
-  <label for="userName">User Name:</label>
-  <input type="text" id="userName" name="userName" required>
+      <label for="userName">User Name:</label>
+      <input type="text" id="userName" name="userName" required>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-  <label for="password1">Password:</label>
-  <input type="password" id="password1" name="password1" required>
+      <label for="password1">Password:</label>
+      <input type="password" id="password1" name="password1" required>
 
-  <label for="password2">Re-enter Password:</label>
-  <input type="password" id="password2" name="password2" required>
+      <label for="password2">Re-enter Pwd:</label>
+      <input type="password" id="password2" name="password2" required>
 
-  <label for="message">Message:</label>
-  <textarea name="message" id="message" ></textarea>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message"></textarea>
 
-  <label for="error-message"></label>
-  <span id="passwordError" class="error-message" ></span>
+      <input type="submit" value="Submit" id="submit">
+    </form>
 
-  <input type="submit" value="Submit" id="submit">
-  </form>
+    <label for="error-message"></label>
+    <div id="passwordError" class="error-message"></div>
+
+    <script src="javascript.js"></script>
   </main>
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">

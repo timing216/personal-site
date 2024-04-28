@@ -1,5 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
+
 use \Firebase\JWT\JWT;
 
 ini_set('display_errors', 1);
@@ -40,7 +41,7 @@ if ($stmt->execute()) {
 
         $jwt = JWT::encode($payload, $key);
         setcookie("jwt", $jwt, $expirationTime, "/", "", true, true); // Secure and HTTPOnly
-        
+
         header("Location: welcome_page.php");
         exit;
     } catch (Exception $e) {
@@ -52,4 +53,3 @@ if ($stmt->execute()) {
 
 $stmt->close();
 $conn->close();
-?>

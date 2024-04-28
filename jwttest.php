@@ -1,4 +1,4 @@
-<?php  
+<?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -17,4 +17,3 @@ echo $jwt;
 
 $decoded = JWT::decode($jwt, $key, array('HS256'));
 print_r($decoded);
-?>
