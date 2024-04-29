@@ -86,14 +86,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // <?php unset($_SESSION['error_message']); ?> // Clear the session error message after displaying
   }
 });
-
-
-
-
-
-
-
-
-
-
 });
