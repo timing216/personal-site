@@ -120,10 +120,10 @@ header::after {
   text-align: right;
 }
 
-#email-input,
-#username-input,
-#password1-input,
-#password2-input,
+#email,
+#username,
+#password1,
+#password2,
 #submit {
   border-radius: 5px;
 }

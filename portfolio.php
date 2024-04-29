@@ -3,7 +3,13 @@
 <head>
   <!-- styles for this page -->
   <link rel="stylesheet" href="portfolio.css" />
-  <script defer src="javascript.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://apis.example.com 'unsafe-inline';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+">
+  <script defer src="javascript.js" defer></script>
 </head>
 
 <body>
@@ -14,6 +20,7 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a class="active" href="portfolio.php">Portfolio</a>
+      <a href="blog.php">Blog</a>
       <a href="register.php">Register</a>
       <a href="login.php">Login</a>
     </nav>

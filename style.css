@@ -39,6 +39,13 @@ main {
   font-family: "Open Sans", sans-serif;
 }
 
+#h1, #h2 {
+  text-align: center;
+}
+
+.h1, .h2 {
+  text-align: center;
+}
 /* set styling for header section */
 header {
   font-size: 1.126rem;

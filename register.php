@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <title>Utaro Hayashi - Developer, Risk Consultant, Mentor</title>
   <link rel="stylesheet" href="register.css" />
   <meta name="description" content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
   <meta name="keywords" content="developer, risk consultant, cyber security, mentor" />
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://apis.example.com 'unsafe-inline';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+">
 </head>
 
 <body>
@@ -17,11 +22,11 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
-      <a href="register.php">Register</a>
+      <a href="blog.php">Blog</a>
+      <a class="active" href="register.php">Register</a>
       <a href="login.php">Login</a>
     </nav>
   </header>
-
   <main>
     <hr>
     <h1 id="register-page">Newsletter Registration</h1>
@@ -36,10 +41,10 @@
       <input type="email" id="email" name="email" required>
 
       <label for="password1">Password:</label>
-      <input type="password" id="password1" name="password1" required>
+      <input type="password" id="password1" name="password1" autocomplete="off" required>
 
       <label for="password2">Re-enter Pwd:</label>
-      <input type="password" id="password2" name="password2" required>
+      <input type="password" id="password2" name="password2" autocomplete="off" required>
 
       <label for="message">Message:</label>
       <textarea name="message" id="message"></textarea>
@@ -47,10 +52,13 @@
       <input type="submit" value="Submit" id="submit">
     </form>
 
+    <label for="too-short-pwd"></label>
+    <div id="password2short" class="error-message"></div>
+
     <label for="error-message"></label>
     <div id="passwordError" class="error-message"></div>
 
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
   </main>
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">

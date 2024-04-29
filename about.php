@@ -17,6 +17,7 @@
       <a href="index.php">Home</a>
       <a class="active" href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
+      <a href="blog.php">Blog</a>
       <a href="register.php">Register</a>
       <a href="login.php">Login</a>
     </nav>

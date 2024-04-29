@@ -3,8 +3,8 @@ require_once 'vendor/autoload.php';
 
 use \Firebase\JWT\JWT;
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 
 // Database configuration and connection setup
 $servername = "localhost";
@@ -17,6 +17,7 @@ if ($conn->connect_error) {
 }
 
 // Prepare and bind
+// Use of prepared statements for counter SQL injection
 $stmt = $conn->prepare("INSERT INTO users (userName, email, password, message) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssss", $userName, $email, $passwordHash, $message);
 

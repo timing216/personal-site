@@ -1,5 +1,5 @@
 // hello world
-
+document.addEventListener("DOMContentLoaded", function() {
 function GreetingsOn() {
   document.getElementById("greetings").innerHTML = "Hello, World!";
 }
@@ -8,11 +8,21 @@ function GreetingsOff() {
   document.getElementById("greetings").innerHTML = "";
 }
 
-// function openAnotherPage() {
-//   window.location.href = "another_page.php";
-//   document.getElementById("thanks-for-contact").innerHTML =
-//     "Thanks for contacting us!";
-// }
+// password length validator
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".register-form");
+  const password1 = document.getElementById("password1");
+  const passwordWarning = document.getElementById("password2short");
+
+  form.addEventListener("submit", function (event) {
+    if (password1.value.length < 6) {
+      passwordWarning.textContent = "Password should be longer than 6 characters.";
+      event.preventDefault(); // Prevent form submission
+    } else {
+      passwordWarning.style.display = "none";
+    }
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".register-form");
@@ -22,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const submit = document.getElementById("submit");
 
   function checkPasswordsMatch() {
-    console.log("Checking passwords:", password1.value, password2.value); // Debugging line
     if (password1.value !== password2.value) {
       passwordError.textContent = "Passwords do not match. Please try again.";
       password1.style.borderColor = "red";
@@ -37,17 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   form.addEventListener("submit", function (event) {
-    console.log("Form submission triggered"); // Debugging line
     if (!form.checkValidity() || !checkPasswordsMatch()) {
-      console.log("Form validation failed"); // Debugging line
       event.preventDefault(); // Prevent form submission if validation fails
       event.stopPropagation();
     } else {
-      console.log("Form is valid and passwords match"); // Debugging line
     }
   });
 });
-
 
 function openAnotherPage() {
   document.getElementById("thanks-for-contact").innerHTML =
@@ -57,74 +62,7 @@ function openAnotherPage() {
   }, 2000); // Redirect after 2 seconds
 }
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const form = document.querySelector(".input-form");
-//   const password1 = document.getElementById("password1");
-//   const password2 = document.getElementById("password2");
-//   const submitButton = document.getElementById("submit");
 
-//   function checkPasswordsMatch() {
-//     if (password1.value !== password2.value) {
-//       alert("Passwords do not match!");
-//       return false; // Prevent form submission
-//     }
-//     return true;
-//   }
-
-//   form.addEventListener("submit", function (event) {
-//     if (!form.checkValidity() || !checkPasswordsMatch()) {
-//       event.preventDefault(); // Prevent form submission
-//       event.stopPropagation(); // Stop the event from propagating further
-//     }
-//   });
-// });
-
-// function checkPasswordsMatch() {
-//   if (password1.value !== password2.value) {
-//     password1.style.borderColor = "red";
-//     password2.style.borderColor = "red";
-//     return false;
-//   } else {
-//     password1.style.borderColor = "green";
-//     password2.style.borderColor = "green";
-//     return true;
-//   }
-// }
-// window.location.href = "another_page.html";
-// document.getElementById("contact_us").hidden;
-// const prev = document.querySelector(".prev");
-// const next = document.querySelector(".next");
-// const images = document.querySelector(".carousel").children;
-// const totalImages = images.length;
-// let index = 0;
-
-// prev.addEventListener("click", () => {
-//   nextImage("next");
-// });
-
-// next.addEventListener("click", () => {
-//   nextImage("prev");
-// });
-
-// function nextImage(direction) {
-//   if (direction == "next") {
-//     index++;
-//     if (index == totalImages) {
-//       index = 0;
-//     }
-//   } else {
-//     if (index == 0) {
-//       index = totalImages - 1;
-//     } else {
-//       index--;
-//     }
-//   }
-
-//   for (let i = 0; i < images.length; i++) {
-//     images[i].classList.remove("main");
-//   }
-//   images[index].classList.add("main");
-// }
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".register-form");
   const submitButton = document.getElementById("submit");
@@ -136,4 +74,5 @@ document.addEventListener("DOMContentLoaded", function () {
       // Optionally, add any custom behavior here
     }
   });
+});
 });

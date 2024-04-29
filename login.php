@@ -5,9 +5,14 @@
 <head>
   <title>Utaro Hayashi - Developer, Risk Consultant, Mentor</title>
   <link rel="stylesheet" href="login.css" />
-  <script src="javascript.js"></script>
 
   <meta name="description" content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://apis.example.com 'unsafe-inline';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+">
   <meta name="keywords" content="developer, risk consultant, cyber security, mentor" />
 </head>
 
@@ -19,8 +24,9 @@
       <a href="index.php">Home</a>
       <a href="about.php">About</a>
       <a href="portfolio.php">Portfolio</a>
+      <a href="blog.php">Blog</a>
       <a href="register.php">Register</a>
-      <a href="login.php">Login</a>
+      <a class="active" href="login.php">Login</a>
     </nav>
   </header>
 
@@ -29,20 +35,47 @@
     <h1 id="login-form">Newsletter Login</h1>
     <hr>
 
-    <form class="login-form" action="login_form.php" method="post">
+    <form action="login_form.php" class="login-form" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Login" class="submitButton">
+    </form>
+
+    <div id="errorMessage" class="error-message"></div>
+    <!-- <form class="login-form" action="login_form.php" method="post">
 
       <label for="userName">Username:</label>
       <input type="text" id="userName" name="userName" required>
 
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
+      <input type="password" id="password" name="password" autocomplete="off" required>
 
-      <input type="button" value="Login" id="login">
+      <input type="submit" value="Login" id="login">
+    </form> -->
 
-      <label for="error-message"></label>
-      <span id="passwordError" class="error-message"></span>
-    </form>
+    <label for="error-message"></label>
+    <span id="passwordError" class="error-message"></span>
+
+    <script src="javascript.js" defer></script>
+
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Display error message if it exists in the session
+      const errorMessageDiv = document.getElementById("errorMessage");
+      const errorMessage = "<?php echo $_SESSION['error_message'] ?? ''; ?>";
+      if (errorMessage !== "") {
+        errorMessageDiv.textContent = errorMessage;
+        <?php unset($_SESSION['error_message']); ?> // Clear the session error message after displaying
+      }
+    });
+  </script>
+
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">
       // FLATIRON SCHOOL<br />
