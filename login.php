@@ -64,18 +64,6 @@
 
   </main>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Display error message if it exists in the session
-      const errorMessageDiv = document.getElementById("errorMessage");
-      const errorMessage = "<?php echo $_SESSION['error_message'] ?? ''; ?>";
-      if (errorMessage !== "") {
-        errorMessageDiv.textContent = errorMessage;
-        <?php unset($_SESSION['error_message']); ?> // Clear the session error message after displaying
-      }
-    });
-  </script>
-
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">
       // FLATIRON SCHOOL<br />
