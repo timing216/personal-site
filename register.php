@@ -6,12 +6,6 @@
   <link rel="stylesheet" href="register.css" />
   <meta name="description" content="Utaro Hayashi is a developer, risk consultant, and mentor. He is dedicated to improving workflow processes and implementing cyber security measures." />
   <meta name="keywords" content="developer, risk consultant, cyber security, mentor" />
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' https://apis.example.com 'unsafe-inline';
-    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
-    font-src 'self' https://fonts.gstatic.com;
-">
 </head>
 
 <body>
@@ -34,19 +28,16 @@
 
     <form class="register-form" action="submit_form.php" method="post">
 
-      <label for="userName">User Name:</label>
-      <input type="text" id="userName" name="userName" required>
-
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="password1">Password:</label>
+      <label for="password1" id="regPwd1">Password:</label>
       <input type="password" id="password1" name="password1" autocomplete="off" required>
 
-      <label for="password2">Re-enter Pwd:</label>
+      <label for="password2" id="regPwd2">Re-enter Pwd:</label>
       <input type="password" id="password2" name="password2" autocomplete="off" required>
 
-      <label for="message">Message:</label>
+      <label for="message" id="regMessage">Message:</label>
       <textarea name="message" id="message"></textarea>
 
       <input type="submit" value="Submit" id="submit">
@@ -58,7 +49,7 @@
     <label for="error-message"></label>
     <div id="passwordError" class="error-message"></div>
 
-    <script src="javascript.js" defer></script>
+    <script src="javascript.js"></script>
   </main>
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">

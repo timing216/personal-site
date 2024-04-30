@@ -7,8 +7,8 @@
     default-src 'self';
     script-src 'self' https://apis.example.com 'unsafe-inline';
     style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
-    font-src 'self' https://fonts.gstatic.com;
-">
+    font-src 'self' https://fonts.gstatic.com;">
+
     <script defer src="javascript.js" defer></script>
 </head>
 

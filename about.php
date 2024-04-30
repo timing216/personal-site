@@ -1,5 +1,10 @@
 <html>
 <link rel="stylesheet" href="style.css" />
+<meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://apis.example.com 'unsafe-inline';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;">
 
 <body>
   <!-- <header>
