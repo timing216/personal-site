@@ -1,3 +1,36 @@
+<?php
+require_once 'vendor/autoload.php';
+
+use \Firebase\JWT\JWT;
+
+session_start();
+
+// Define your JWT secret key
+$key = getenv('JWT_SECRET_KEY') ?: 'default_secret_key';
+
+// Check for JWT in cookies
+if (isset($_COOKIE['jwt'])) {
+    $jwt = $_COOKIE['jwt'];
+
+    try {
+        // Decode the token - this will automatically check if the token is expired
+        $decoded = JWT::decode($jwt, new \Firebase\JWT\Key($key, 'HS256'));
+
+        // You can add more checks here if needed, e.g., check the user's role
+
+    } catch (Exception $e) {
+        // Redirect to login page or show error if the token is invalid or expired
+        header('Location: login.php');
+        exit;
+    }
+} else {
+    // No token found, redirect to login page
+    header('Location: login.php');
+    exit;
+}
+
+?>
+
 <html>
 
 <head>
@@ -21,8 +54,8 @@
             <a href="about.php">About</a>
             <a href="portfolio.php">Portfolio</a>
             <a class="active" href="blog.php">Blog</a>
-            <a href="register.php">Register</a>
             <a href="login.php">Login</a>
+            <a href="logout.php">Logout</a>
         </nav>
     </header>
 

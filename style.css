@@ -108,6 +108,7 @@ section:nth-of-type(even)>img {
   animation-iteration-count: 1;
 }
 
+
 /* the keyframes adds animation */
 
 @keyframes shake {

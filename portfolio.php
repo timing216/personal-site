@@ -21,8 +21,8 @@
       <a href="about.php">About</a>
       <a class="active" href="portfolio.php">Portfolio</a>
       <a href="blog.php">Blog</a>
-      <a href="register.php">Register</a>
       <a href="login.php">Login</a>
+      <a href="logout.php">Logout</a>
     </nav>
   </header>
 

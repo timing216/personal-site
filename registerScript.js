@@ -11,7 +11,7 @@
   
       // Check password length
       if (password1.value.length < 6) {
-        passwordWarning.textContent = "Password should be longer than 6 characters.";
+        passwordWarning.textContent = "Password must be longer than 6 characters.";
         passwordWarning.style.display = "block";
         valid = false;
       } else {

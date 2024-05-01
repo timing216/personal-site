@@ -41,14 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $jwt = JWT::encode($payload, $key);
             setcookie("jwt", $jwt, $expirationTime, "/", "", true, true);
 
-            header("Location: login.php");
+            header("Location: blog.php");
             exit;
         } else {
-            echo "Invalid password.";
+            echo "<script type='text/javascript'>alert('Passwords do not match');</script>";
         }
     } else {
         header("Location: login.php");
-        echo "User not found.";
+        echo "<script type='text/javascript'>alert('User not found.');</script>";
         exit;
     }
 
