@@ -99,7 +99,7 @@ $conn->close();
   <footer>
     <div class="footer1" style="color:RGB(1,173,226);">
       // FLATIRON SCHOOL<br />
-      &copy; Copyright 2024 All Rights Reserved
+      &copy Copyright 2024 All Rights Reserved
     </div>
     <div class="footer2">
       <a class="sm1" href="https://linkedin.com" target="_blank">
@@ -108,3 +108,11 @@ $conn->close();
       <a class="sm2" href="https://facebook.com" target="_blank">
         <img class="media-link" src="img/facebook.svg" alt="Facebook Logo" />
       </a>
+      <a class="sm3" href="https://twitter.com" target="_blank">
+        <img class="media-link" src="img/twitter.svg" alt="Twitter Logo" />
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

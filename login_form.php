@@ -55,35 +55,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 $conn->close();
-
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $email = $conn->real_escape_string($_POST['email']);
-//     $password = $conn->real_escape_string($_POST['password']);
-
-//     $stmt = $conn->prepare("SELECT password FROM users WHERE email = ?");
-//     $stmt->bind_param("s", $email);
-//     $stmt->execute();
-//     $stmt->store_result();
-
-//     if ($stmt->num_rows == 1) {
-//         $stmt->bind_result($hashedPassword);
-//         $stmt->fetch();
-
-//         if (password_verify($password, $hashedPassword)) {
-//             // Generate JWT and redirect as before
-//             header("Location: blog.php");
-//             exit;
-//         } else {
-//             $_SESSION['error_message'] = "Invalid password.";
-//             header("Location: login.php");
-//             exit;
-//         }
-//     } else {
-//         $_SESSION['error_message'] = "User not found.";
-//         header("Location: login.php");
-//         exit;
-//     }
-
-//     $stmt->close();
-// }
-// $conn->close();

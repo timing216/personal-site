@@ -43,7 +43,7 @@ if (isset($_COOKIE['jwt'])) {
     <main>
         <div id="loggedout-form">
             <hr>
-            <h1>You Are Logged Out!</h1>
+            <h1>You Are Logged Out</h1>
             <hr>
             <br>
             <h2>Thanks for stopping by!</h2>
